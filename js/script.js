@@ -16,3 +16,27 @@ const biciDaCorsa = [
   }
   
   console.log(biciLeggera)
+
+
+  const squadreDiCalcio = [
+    { nome: "Juventus", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Inter", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Milan", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Roma", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Napoli", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Lazio", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Atalanta", puntiFatti: 0, falliSubiti: 0 },
+    { nome: "Fiorentina", puntiFatti: 0, falliSubiti: 0 }
+  ];
+
+  const getRandomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+
+  for(let i = 0; i < squadreDiCalcio.length; i++){
+    const curSquadra = squadreDiCalcio[i];
+    curSquadra.puntiFatti = getRandomNum(0, 10)
+    curSquadra.falliSubiti = getRandomNum(0, 10)
+  }
+
+  console.log(squadreDiCalcio)
+
+
